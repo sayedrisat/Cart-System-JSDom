@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+/* create cart section */
+
+.createCart{
+    background-color: darkred;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 86px;
+}
+
+.createbtn{
+    padding: .85rem;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgb(1, 28, 37);
+    cursor: pointer;
+}
+
+.createbtn:hover{
+    background-color: rgb(220, 223, 224);
+    font-size: 15px;
+}
+
+/* cards work */
+.cardsbox{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    gap: 24px;
+}
+
+.card{
+    height: 18rem;
+    width: 15rem;
+    background-color: white;
+    border-radius: 25px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image{
+    height: 60%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Details{
+    color: black;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.Details span{
+    color: darkgreen;
+}
+
+.actions{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acbtn{
+    font-size: medium;
+    color: white;
+    padding: 3px;
+    border-radius: 6px;
+}
+
+.edit{
+    background-color: rgb(180, 99, 0);
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    box-shadow: 2px 2px gray
+}
+
+.edit:hover{
+    background-color: rgb(142, 78, 0);
+}
+
+.delete{
+    background-color: darkred;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    box-shadow: 2px 2px gray
+}
+
+.delete:hover{
+    background-color: rgb(87, 1, 1);
+}
+
+/* popup and form  */
+.popup{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 790px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.553);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.form{
+    width: 500px;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form input{
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid darkblue;
+}
+
+.form button{
+    border-radius: 22px;
+    padding: 18px;
+    background-color: aqua;
+    font-size: large;
+    border: 2px solid darkblue;
+}
+
+.form button:hover{
+    background-color: rgb(0, 193, 193)
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.closetxt{
+    cursor: pointer;
+}
+.closetxt:hover{
+    color: red;
+}
